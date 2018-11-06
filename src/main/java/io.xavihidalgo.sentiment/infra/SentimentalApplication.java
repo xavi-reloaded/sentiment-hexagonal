@@ -32,14 +32,6 @@ public class SentimentalApplication extends Application<SentimentalConfiguration
 
 	@Override
 	public void initialize(Bootstrap<SentimentalConfiguration> bootstrap) {
-		// nothing to do yet
-		ConfigurationSourceProvider provider = new ConfigurationSourceProvider() {
-			@Override
-			public InputStream open(String s) throws IOException {
-				return null;
-			}
-		};
-		bootstrap.setConfigurationSourceProvider(provider);
 	}
 
 	@Override
