@@ -10,13 +10,10 @@
     <name>Sample Project to explore hexagonal architecture</name>
 
     <properties>
-        <version.vlingo>0.7.3</version.vlingo>
-        <version.junit5>5.3.1</version.junit5>
-        <version.junit4.compat>1.1.0</version.junit4.compat>
         <version.surefire>2.22.1</version.surefire>
         <version.lombok>1.18.2</version.lombok>
-        <maven.compiler.source>10</maven.compiler.source>
-        <maven.compiler.target>10</maven.compiler.target>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -141,6 +138,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
                 <configuration>
                     <archive>
                         <manifest>
