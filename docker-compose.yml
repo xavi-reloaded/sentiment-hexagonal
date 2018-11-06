@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+  postgres:
+    restart: always
+    image: kiasaki/alpine-postgres:9.5
+    environment:
+    - POSTGRES_USER:'class'
+    - POSTGRES_PASSWORD:'class'
+    - POSTGRES_DB:'class'
+    ports:
+    - '5432:5432'
+    volumes:
+    - database:/var/lib/postgresql/data
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+    - 8081:8080
+  mysql:
+    image: mysql
+    container_name: class
+    ports:
+    - 6603:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "class"
+      MYSQL_DATABASE: "class"
+    volumes:
+    - /storage/docker/mysql-datadir:/var/lib/mysql
+
+volumes:
+  database:
