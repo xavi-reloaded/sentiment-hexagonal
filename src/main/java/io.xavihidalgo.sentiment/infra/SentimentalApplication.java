@@ -32,6 +32,7 @@ public class SentimentalApplication extends Application<SentimentalConfiguration
 
 	@Override
 	public void initialize(Bootstrap<SentimentalConfiguration> bootstrap) {
+
 	}
 
 	@Override
